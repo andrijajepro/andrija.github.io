@@ -1,0 +1,13 @@
+<body>
+<img src="https://stream.uzivobeograd.rs/live/cam_8.jpg?rand=0.9195974999914769" id="liveImage" alt="Live Camera Feed">
+    
+    <script>
+        function refreshImage() {
+            const imageElement = document.getElementById('liveImage');
+            imageElement.src = 'https://stream.uzivobeograd.rs/live/cam_8.jpg?rand=' + Math.random();
+        }
+
+        // Refresh the image every 2 seconds (2000 milliseconds)
+        setInterval(refreshImage, 2000);
+    </script>
+</body>
